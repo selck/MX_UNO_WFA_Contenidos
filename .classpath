@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/com.ibm.ws.ast.st.runtime.runtimeTarget.v61/was.base.v61"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jsoup"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/log4j"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring-3.1.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/wfa"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/commons"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/WebSphere Application Server v7.0 JRE"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jackson"/>
+	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>
