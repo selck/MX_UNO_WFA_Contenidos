@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id= "mx.com.amx.unotv.insertar.noticias" name= "UNO Pre Render Workflow Action Factory" version= "1.0.0" provider-name= "IBM" >
+<extension-point id= "UNOCustomWorkflowActionFactory" name="UNOCustomWorkflowActionFactory" />
+<extension point="com.ibm.workplace.wcm.api.CustomWorkflowActionFactory" id= "UNOPreRenderCustomWorkflowActionFactory" >
+<provider class= "mx.com.amx.unotv.workflow.PreRenderWorkFlowActionFactory"/>
+</extension>
+</plugin>
