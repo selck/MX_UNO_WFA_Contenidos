@@ -44,6 +44,8 @@ private static final long serialVersionUID = 1L;
 	private String URL_WEBSERVER_CSS_AMP;
 	
 	private String catalogoParametros;
+	private String pcodeDeportes;
+	
 	/**
 	 * @return el nameAuthoringTemplate
 	 */
@@ -464,5 +466,19 @@ private static final long serialVersionUID = 1L;
 	public void setCatalogoParametros(String catalogoParametros) {
 		this.catalogoParametros = catalogoParametros;
 	}
+	/**
+	 * @return the pcodeDeportes
+	 */
+	public String getPcodeDeportes() {
+		return pcodeDeportes;
+	}
+	/**
+	 * @param pcodeDeportes the pcodeDeportes to set
+	 */
+	public void setPcodeDeportes(String pcodeDeportes) {
+		this.pcodeDeportes = pcodeDeportes;
+	}
+	
+	
 	
 }

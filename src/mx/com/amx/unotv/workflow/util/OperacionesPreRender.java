@@ -30,65 +30,7 @@ public class OperacionesPreRender {
 
 private final static Logger logger = Logger.getLogger(OperacionesPreRender.class);	
 
-public static void main(String[] args){
-	try {
-		//String rtfContenido="<p dir=\"ltr\">Ella es <strong>Simone Anderson</strong>. La mujer de 25 aÒos, residente de Auckland, <strong>Nueva Zelanda</strong>, dbajÛ 88 kilos en °tan sÛlo 20 meses!</p>/n/n<p dir=\"ltr\">Su transformaciÛn fue documentada en sus redes sociales desde 2014, donde, adem·s de fotografÌas, que dan cuenta de la evoluciÛn de su cuerpo, publica arduas sesiones de ejercicio y presume cÛmo es su vida ahora que cuenta con un cuerpo realmente esbelto.</p>/n/n<p dir=\"ltr\">[instagram=https://www.instagram.com/p/BFPle90NKsh/=instagram]</p>/n/n<p dir=\"ltr\">Dijo que compartiÛ su historia en Instagram para motivarse. Hizo un compromiso, lo respetÛ y ahora cuenta su historia a la <strong>BBC</strong>, donde explica el porquÈ decidiÛ hacer un cambio dr·stico en su vida.</p>/n/n<p dir=\"ltr\"><em><strong>\"Era el momento de hacer algo al respecto y sentÌ que utilizando Instagram serÌa la forma de comprometerme verdaderamente\".</strong></em></p>/n/n<p dir=\"ltr\">Publicar en 2014, a los 23 aÒos, su primera foto en <strong>Instagram </strong>no fue nada sencillo, comenta. PasÛ horas llorando hasta que por fin se decidiÛ a hacerlo.</p>/n/n<p dir=\"ltr\"><em><strong>\"En el momento en el que le di a \"publicar' sentÌ que me liberaba de un gran peso, sabÌa que no habÌa vuelta atr·s\".</strong></em></p>/n/n<p dir=\"ltr\">RecibiÛ crÌticas, muchas crÌticas, e incluso cuestionamientos sobre la veracidad de su transformaciÛn. Se sintiÛ herida. Al mismo tiempo fue ganando adeptos, quienes siguieron puntualmente sus pasos.</p>/n/n<p dir=\"ltr\"><em><strong>\"Me di cuenta que estaba siendo una inspiraciÛn para otra gente con el mismo problema y eso me encantaba\".</strong></em></p>/n/n<p dir=\"ltr\">AquÌ el antes y el despuÈs:</p>/n/n<p dir=\"ltr\">[instagram=https://www.instagram.com/p/BFBSQLCNKs-/=instagram]</p>/n/n<p dir=\"ltr\"><em><strong>øY cÛmo logrÛ tan buenos resultados?</strong></em></p>/n/n<p dir=\"ltr\">Simone explica que se sometiÛ a la operaciÛn de la manga g·strica, mediante la cual redujo alrededor del 15% del tamaÒo original del estÛmago. Aunado a ello, hizo dieta y se fijÛ un estilo de vida m·s saludable, acompaÒado de un rÈgimen de ejercicio.</p>/n/n<p dir=\"ltr\">Ahora la mujer, rubia y guapÌsima, se ve asÌ:</p>/n/n<p dir=\"ltr\">[instagram=https://www.instagram.com/p/BFqIZkVtKu_/=instagram]</p>/n/n<p dir=\"ltr\">[instagram=https://www.instagram.com/p/BFF1GcbNKpQ/=instagram]</p>/n/n<p dir=\"ltr\">øGuapa, verdad?</p>/n/n<p dir=\"ltr\"><em><strong>Su evoluciÛn en im·genes:</strong></em></p>/n/n<p dir=\"ltr\">AquÌ puedes ver un Timelapse de su pÈrdida de peso:</p>/n/n<p dir=\"ltr\">kaka</p>/n";
-		String rtfContenido="Los boxeadores profesionales, sin excluir a superestrellas como Floyd Mayweather o Manny Pacquiao, podrÌan realizar su debut olÌmpico en RÌo 2016 seg˙n los planes del presidente de la AIBA, AsociaciÛn Internacional de Boxeo adscrita al ComitÈ OlÌmpico Internacional, Wu Ching-kuo. Este, en el transcurso de una reuniÛn de su Asociacion en Gran BretaÒa, seÒalÛ que los criterios de elegibilidad olÌmpica pueden ser modificados en breve. Este cambio ser· tratado en la misma, si bien luego debe ser ratificado por la ComisiÛn Ejecutiva en caso de ser aprobados.Pocas dudas hay de que lo ser·n, sin embargo. Wu ha seÒalado que el boxeo es \"el ˙nico deporte sin sus profesionales en los Juegos. El COI y las Federaciones queremos que estÈn los mejores. De acuerdo con nuestros estatutos es posible realizar el cambio de forma inmediata. Es, adem·s, el 70 aniversario de la AIBA y queremos hacer algo especial\".La AIBA lleva tiempo, en un proceso acelerado por la llegada de Wu a la presidencia, tratando de entrar en el mundo del boxeo profesional. Seg˙n algunas opiniones, tratando tambiÈn de dar la batalla a las organizaciones puramente profesionales (WBA, WBO, WBC, IBF...) aprovechando para ello tambiÈn su vinculaciÛn al COI, dado que sÛlo podrÌan participar en los Juegos aquellos p˙giles con licencia AIBA. AsÌ, se ha eliminado la palabra 'amateur' de su nombre, se han eliminado el casco y la camiseta de muchos de sus eventos masculinos, y se ha establecido que no se considerar· profesional a quien haya disputado menos de 15 combates remunerados."+
-"BarÁa"+
-"<p dir=\"ltr\" style=\"text-align: justify;\"> aki va un parrafo veda</p>"+
-"BarÁa"+
-"FACEBOOK"+
-"[facebook=https://www.facebook.com/martavsilva10/photos/pb.100433703438266.-2207520000.1457207815./101605036654466/?type=3&theater=facebook]"+
-"INSTAGRAM"+
-"[instagram=https://www.instagram.com/p/BCP4DShq_0F/?taken-by=musaliya135=instagram]"+
-"Adem·s, la AIBA ha organizado las Series Mundiales, una competiciÛn por equipos con pagos a los p˙giles.Esta medida significarÌa, al menos en teoria, que se podrÌan ver en acciÛn ya en RÌo 2016 a algunas de las grandes estrellas del boxeo. Floyd Mayweather podrÌa volver a los Juegos a unir a los tÌtulos mundiales en cinco categorÌas y sus cientos de millones de dÛlares ganados el oro en peso pluma que se escapÛ en Atlanta 1996, derrotado por el b˙lgaro Serafim Todorov.Su rival en la pelea por el mundial welter que batiÛ rÈcords de expectaciÛn y econÛmicos, el ahora controvertido Manny Pacquiao, tambiÈn podrÌa entonces volver a los Juegos con todas las de ley, tras haber sido abanderado de Filipinas en PekÌn 2008. En aquella ocasiÛn fue elegido el nadador Miguel Molina, pero la presidenta Gloria Macapagal pidiÛ que se le confiriera el honor al boxeador, que se habÌa proclamado pocos meses antes campeÛn mundial del peso ligero WBC.Otros boxeadores, como Mohamed AlÌ, George Foreman o Lennox Lewis, entre otros, pasaron por los Juegos antes de iniciar exitosas trayectorias profesionales."+
-"FACEBOOK 2"+
-"[facebook=https://web.facebook.com/barackobama/videos/10154182550046749/=facebook]"+
-"Sin embargo, no se ha hablado de un cambio de reglamentos para el boxeo olÌmpico, que consta de tres asaltos, mientras un combate profesional se compone de 12. Otras voces seÒalan que serÌa injusto enfrentar en los combates olÌmpicos a profesionales expertos con jÛvenes que realizan sus primeras armas en el boxeo. Y finalmente, est· por ver que grandes y supermillonarias estrellas, que no acostumbran a dar un paso gratuitamente, se sientan lo bastante atraÌdas por el oro olÌmpico como para disputar unos combates sin remuneraciÛn, al menos directa."+
-"TWITTER"+
-"[twitter=https://twitter.com/missyfranklin/status/703369208382431232=twitter]"+
-"Y ya por ultimo un lindo gif..."+
-"[giphy=http://giphy.com/gifs/sassy-batman-ZuM7gif8TCvqU,http://i.giphy.com/rgg2PJ6VJTyPC.gif=giphy]"+
-"TWITTER 2"+
-"[twitter=https://twitter.com/yelenaisinbaeva/status/636795867622731776=twitter]"+
-"M·s de Instagram"+
-"La judoca mexicana, Vanessa Zambotti, tendr· el control total del Instagram de Claro Sports.AsÌ como lo lees, tendremos #UnDÌaConVanessaZambotti, donde la atleta mexicana compartir· con los seguidores de Claro Sports su vida diaria, desde los entrenamientos y muchas cosas m·s que no puedes perderte."+ 
-"[instagram=https://www.instagram.com/p/BCqE0Ixhfy1/?taken-by=clarosports=instagram]"+
-"AsÌ que no lo dudes, sÌguenos en Instagram @ClaroSports, porque tendremos un lunes muy especial."+
-"[instagram=https://www.instagram.com/p/BCqXA_ABf3x/?taken-by=clarosports=instagram]"+
-"WIDGET"+
-"[widget-elecciones-eeuu]"+
-"<p dir=\"ltr\" style=\"text-align: justify;\"> aki va otro parrafo veda</p>"+
-"øQuieres ver las fotos que est· compartiendo Vanessa desde nuestra cuenta? Da clic AQUÕ."+
-"Y ya por ultimo un lindo gif 2..."+
-"[giphy=http://giphy.com/gifs/superman-funny-wdh1SvEn0E06I,http://i.giphy.com/wdh1SvEn0E06I.gif=giphy]";
-		
-		
-		/*String [] listInstagram=StringUtils.substringsBetween(rtfContenido, "https://www.instagram.com/p/", "/");
-		for (String string : listInstagram) {
-			System.out.println(string);
-		}
-		
-		String [] listFace=StringUtils.substringsBetween(rtfContenido, "[facebook=", "=facebook]");
-		for (String string : listFace) {
-			System.out.println(string);
-		}	
-		
-		String [] listTwitter=StringUtils.substringsBetween(rtfContenido, "[twitter=", "=twitter]");
-		for (String string : listTwitter) {
-			System.out.println(string);
-		}
-		
-		String [] listGIF=StringUtils.substringsBetween(rtfContenido, "[twitter=", "=twitter]");
-		for (String string : listGIF) {
-			System.out.println(string);
-		}*/
-		
-	
-	} catch (Exception e) {
-		System.out.println(e.getLocalizedMessage());
-	}
-}
+
 private static String devuelveCadenasPost(String id_red_social, String rtfContenido){
 	String url="", cadenaAReemplazar="", salida="";
 	try {
@@ -102,7 +44,7 @@ private static String devuelveCadenasPost(String id_red_social, String rtfConten
 	return salida;
 }
 
-private static String getEmbedPost(String RTFContenido){
+public static String getEmbedPost(String RTFContenido){
 	try {
 		String rtfContenido=RTFContenido;
 		
@@ -211,7 +153,7 @@ private static String getEmbedPost(String RTFContenido){
 				embedCode=new StringBuffer();
 				embedCode=new StringBuffer();
 				embedCode.append(" <img src=\""+url.split("\\,")[1]+"\" class=\"giphy\"> \n");
-				embedCode.append(" <span>VÌa  \n");
+				embedCode.append(" <span>VÔøΩa  \n");
 				embedCode.append(" 	<a href=\""+url.split("\\,")[0]+"\" target=\"_blank\">Giphy</a> \n");
 				embedCode.append("  </span> \n");
 				
@@ -268,17 +210,6 @@ private static String getEmbedPost(String RTFContenido){
 			widget.append(" 	<div id=\"mapa-elecciones\"></div>\n");
 			widget.append(" 	<script type=\"text/javascript\" src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDomk2vz2UiyFZNxaW80hOueCie6qgIed8&amp;language=es\"></script>\n");
 			widget.append(" </div>\n");
-			/*widget.append(" <div class=\"mapa-elecciones\">\n");
-			widget.append(" <div class=\"counter-elecciones\">\n");
-			widget.append(" <p>Democratas</p>\n");
-			widget.append(" <p></p>\n");
-			widget.append(" <p>No decidido</p>\n");
-			widget.append(" <p></p>\n");
-			widget.append(" <p>Republicanos</p>\n");
-			widget.append(" </div>\n");
-			widget.append(" <div id=\"mapa-elecciones\"></div>\n");
-			widget.append(" <script type=\"text/javascript\" src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyDomk2vz2UiyFZNxaW80hOueCie6qgIed8&amp;language=es\"></script>\n");
-			widget.append(" </div>\n"); */
 			RTFContenido = RTFContenido.replace("[mapa-elecciones-eeuu]", widget.toString());
 		} catch (Exception e) {
 			RTFContenido = RTFContenido.replace("[mapa-elecciones-eeuu]", "");
@@ -303,6 +234,7 @@ private static String getEmbedPost(String RTFContenido){
 			Properties props = new Properties();
 			
 			props.load(new FileInputStream(new File(rutaProperties)));
+			parametrosDTO.setPcodeDeportes(propsTmp.getProperty("pcodeDeportes"));
 			parametrosDTO.setURL_WS(propsTmp.getProperty(ambiente+".URL_WS"));
 			parametrosDTO.setURL_WS_VIDEO(propsTmp.getProperty(ambiente+".URL_WS_VIDEO"));
 			parametrosDTO.setURL_WS_PARAMETROS(propsTmp.getProperty(ambiente+".URL_WS_PARAM"));
@@ -509,7 +441,7 @@ private static String getEmbedPost(String RTFContenido){
 			
 		}
 		try {
-			String titulo_comentario=contentDTO.getFcTituloComentario() == null || contentDTO.getFcTituloComentario().equals("")?"øQuÈ opinas?":contentDTO.getFcTituloComentario();
+			String titulo_comentario=contentDTO.getFcTituloComentario() == null || contentDTO.getFcTituloComentario().equals("")?"ÔøΩQuÔøΩ opinas?":contentDTO.getFcTituloComentario();
 			HTML = HTML.replace("$WCM_TITULO_COMENTARIO$", StringEscapeUtils.escapeHtml(titulo_comentario));
 		} catch (Exception e) {
 			HTML = HTML.replace("$WCM_TITULO_COMENTARIO$", "");
@@ -707,7 +639,7 @@ private static String getEmbedPost(String RTFContenido){
 					{
 						items.append("<i class=\"fa fa fa-camera-retro\"></i>\n");
 					}										
-					//items.append("	  "+cambiaCaracteres(contentDTORelacionada.getFcTitulo()).replaceAll("\\ì", "&#8220;").replaceAll("\\î", "&#8221;")+" \n");
+					//items.append("	  "+cambiaCaracteres(contentDTORelacionada.getFcTitulo()).replaceAll("\\ÔøΩ", "&#8220;").replaceAll("\\ÔøΩ", "&#8221;")+" \n");
 					items.append(" "+StringEscapeUtils.escapeHtml(contentDTORelacionada.getFcTitulo())+" \n");
 					items.append("	  </span> \n");
 					//provisional
@@ -1062,7 +994,7 @@ private static String getEmbedPost(String RTFContenido){
 					embedCode=new StringBuffer();
 					embedCode=new StringBuffer();
 					embedCode.append(" <amp-img class=\"giphy\" src=\""+url.split("\\,")[1]+"\" width=\"300\" height=\"125\" layout=\"responsive\"></amp-img> \n");
-					embedCode.append(" <span> VÌa  \n");
+					embedCode.append(" <span> VÔøΩa  \n");
 					embedCode.append(" 	<a href=\""+url.split("\\,")[0]+"\" target=\"_blank\">Giphy</a> \n");
 					embedCode.append("  </span> \n");
 					
@@ -1296,41 +1228,43 @@ private static String getEmbedPost(String RTFContenido){
 			mediaContent.append(" <div class=\"video\"> \n");
 			mediaContent.append(" <div id=\"ooyalaplayer\"></div> \n");
 			mediaContent.append(" </div> \n");
-			//version 3 mediaContent.append("<script src=\"//player.ooyala.com/v3/"+IdPlayerVideoOoyala+"?platform=html5-priority\"></script>\n");
 			//VERSION DE SIEMPRE 
-			mediaContent.append("<script src=\"//player.ooyala.com/v3/"+IdPlayerVideoOoyala+"\"></script>\n");
-			mediaContent.append("<script>OO.ready(function() { OO.Player.create('ooyalaplayer', '"+IdVideoOoyala+"', {\"autoplay\":true}); });</script>\n");
-			mediaContent.append("<noscript><div>Please enable Javascript to watch this video</div></noscript>\n");
+			//mediaContent.append("<script src=\"//player.ooyala.com/v3/"+IdPlayerVideoOoyala+"\"></script>\n");
+			//mediaContent.append("<script>OO.ready(function() { OO.Player.create('ooyalaplayer', '"+IdVideoOoyala+"', {\"autoplay\":true}); });</script>\n");
+			//mediaContent.append("<noscript><div>Please enable Javascript to watch this video</div></noscript>\n");
 			
 			//VERSION 4
-			/*mediaContent.append(" <link rel=\"stylesheet\" href=\"//player.ooyala.com/static/v4/stable/4.10.6/skin-plugin/html5-skin.min.css\"> \n");
-			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.10.6/core.min.js\"></script> \n");
-			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.10.6/video-plugin/main_html5.min.js\"></script> \n");
-			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.10.6/video-plugin/osmf_flash.min.js\"></script> \n");
-			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.10.6/video-plugin/bit_wrapper.min.js\"></script> \n");
-			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.10.6/skin-plugin/html5-skin.min.js\"></script> \n");
-			mediaContent.append(" <script type=\"text/javascript\" src=\"//player.ooyala.com/static/v4/stable/4.10.6/ad-plugin/google_ima.min.js\"></script> \n");
 			
+
+			mediaContent.append(" <!-- Ooyala V4--> \n");
+			mediaContent.append(" <div class=\"video\"> \n");
+			mediaContent.append("   <div id=\"ooyalaplayer\"></div> \n");
+			mediaContent.append(" </div> \n");
+			mediaContent.append(" <link rel=\"stylesheet\" href=\"//player.ooyala.com/static/v4/stable/4.13.5/skin-plugin/html5-skin.min.css\"> \n");
+			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.13.5/core.min.js\"></script> \n");
+			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.13.5/video-plugin/bit_wrapper.min.js\"></script> \n");
+			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.13.5/video-plugin/main_html5.min.js\"></script> \n");
+			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.13.5/skin-plugin/html5-skin.min.js\"></script> \n");
+			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.13.5/ad-plugin/google_ima.min.js\"></script> \n");
+			mediaContent.append(" <script src=\"//player.ooyala.com/static/v4/stable/4.13.5/analytics-plugin/googleAnalytics.min.js\"></script> \n");
 			mediaContent.append(" <script> \n");
-			mediaContent.append(" var playerParam = { \n");
-			mediaContent.append(" 	\"pcode\": \""+dto.getFcPCode()+"\", // Pcode Uno TV \n");
-			mediaContent.append(" 	\"playerBrandingId\": \""+IdPlayerVideoOoyala+"\", // Player ID \n");
-			mediaContent.append(" \"platform\": \"html5\", \n ");
-			mediaContent.append(" 	\"autoplay\": true, \n");
-			mediaContent.append(" 	\"skin\": { \n");
-			mediaContent.append(" 		\"config\": \"/portal/unotv/ooyala/v4.10.6/skin.json\" \n");
-			//mediaContent.append(" 		\"config\": \"/ooyala/v4.10.6/skin.json\" \n");
-			mediaContent.append(" 	} \n");
-			mediaContent.append(" }; \n");
-			mediaContent.append(" OO.ready(function() { \n");
-			mediaContent.append(" 	window.pp = OO.Player.create('ooyalaplayer', '"+IdVideoOoyala+"', playerParam); \n"); // Content ID
-			mediaContent.append(" }); \n");
-			mediaContent.append(" </script> \n"); */
+			mediaContent.append("   var playerParam = { \n");
+			mediaContent.append("     'pcode': '"+dto.getFcPCode()+"', \n");
+			mediaContent.append("     'playerBrandingId': \""+IdPlayerVideoOoyala+"\", \n");
+			mediaContent.append("     'skin': { \n");
+			mediaContent.append("       'config': '/ooyala/4.13.5/skin.json' \n");
+			mediaContent.append("     } \n");
+			mediaContent.append("   }; \n");
+			mediaContent.append("   OO.ready(function() { \n");
+			mediaContent.append("     window.pp = OO.Player.create('ooyalaplayer', \""+IdVideoOoyala+"\", playerParam); \n");
+			mediaContent.append("   }); \n");
+			mediaContent.append(" </script> \n");
+			
 		}
 		return mediaContent.toString();
 	}		
 
-	public boolean writeHTML(String rutaHMTL, String HTML) {
+	public static boolean writeHTML(String rutaHMTL, String HTML) {
 		boolean success = false;
 		try {
 			FileWriter fichero = null;
@@ -1559,48 +1493,49 @@ private static String getEmbedPost(String RTFContenido){
 		return HTML;
 	}
 	
-	private static String cambiaCaracteres(String texto) {
+	public static String cambiaCaracteres(String texto) {
 		
-		texto = texto.replaceAll("·", "&#225;");
-        texto = texto.replaceAll("È", "&#233;");
-        texto = texto.replaceAll("Ì", "&#237;");
-        texto = texto.replaceAll("Û", "&#243;");
-        texto = texto.replaceAll("˙", "&#250;");  
-        texto = texto.replaceAll("¡", "&#193;");
-        texto = texto.replaceAll("…", "&#201;");
-        texto = texto.replaceAll("Õ", "&#205;");
-        texto = texto.replaceAll("”", "&#211;");
-        texto = texto.replaceAll("⁄", "&#218;");
-        texto = texto.replaceAll("—", "&#209;");
-        texto = texto.replaceAll("Ò", "&#241;");        
-        texto = texto.replaceAll("™", "&#170;");          
-        texto = texto.replaceAll("‰", "&#228;");
-        texto = texto.replaceAll("Î", "&#235;");
-        texto = texto.replaceAll("Ô", "&#239;");
-        texto = texto.replaceAll("ˆ", "&#246;");
-        texto = texto.replaceAll("¸", "&#252;");    
-        texto = texto.replaceAll("ƒ", "&#196;");
-        texto = texto.replaceAll("À", "&#203;");
-        texto = texto.replaceAll("œ", "&#207;");
-        texto = texto.replaceAll("÷", "&#214;");
-        texto = texto.replaceAll("‹", "&#220;");
-        texto = texto.replaceAll("ø", "&#191;");
-        texto = texto.replaceAll("ì", "&#8220;");        
-        texto = texto.replaceAll("î", "&#8221;");
-        texto = texto.replaceAll("ë", "&#8216;");
-        texto = texto.replaceAll("í", "&#8217;");
-        texto = texto.replaceAll("Ö", "...");
-        texto = texto.replaceAll("°", "&#161;");
-        texto = texto.replaceAll("ø", "&#191;");
-        texto = texto.replaceAll("∞", "&#176;");
+		texto = texto.replaceAll("√°", "&#225;");
+        texto = texto.replaceAll("√©", "&#233;");
+        texto = texto.replaceAll("√≠", "&#237;");
+        texto = texto.replaceAll("√≥", "&#243;");
+        texto = texto.replaceAll("√∫", "&#250;");  
+        texto = texto.replaceAll("√Å", "&#193;");
+        texto = texto.replaceAll("√â", "&#201;");
+        texto = texto.replaceAll("√ç", "&#205;");
+        texto = texto.replaceAll("√ì", "&#211;");
+        texto = texto.replaceAll("√ö", "&#218;");
+        texto = texto.replaceAll("√ë", "&#209;");
+        texto = texto.replaceAll("√±", "&#241;");        
+        texto = texto.replaceAll("¬™", "&#170;");          
+        texto = texto.replaceAll("√§", "&#228;");
+        texto = texto.replaceAll("√´", "&#235;");
+        texto = texto.replaceAll("√Ø", "&#239;");
+        texto = texto.replaceAll("√∂", "&#246;");
+        texto = texto.replaceAll("√º", "&#252;");    
+        texto = texto.replaceAll("√Ñ", "&#196;");
+        texto = texto.replaceAll("√ã", "&#203;");
+        texto = texto.replaceAll("√è", "&#207;");
+        texto = texto.replaceAll("√ñ", "&#214;");
+        texto = texto.replaceAll("√ú", "&#220;");
+        texto = texto.replaceAll("¬ø", "&#191;");
+        texto = texto.replaceAll("‚Äú", "&#8220;");        
+        texto = texto.replaceAll("‚Äù", "&#8221;");
+        texto = texto.replaceAll("‚Äò", "&#8216;");
+        texto = texto.replaceAll("‚Äô", "&#8217;");
+		texto = texto.replaceAll("‚Ä¶", "...");
+		texto = texto.replaceAll("¬°", "&#161;");
+		texto = texto.replaceAll("¬ø", "&#191;");
+		texto = texto.replaceAll("¬∞", "&#176;");
         
-        texto = texto.replaceAll("ì", "&#147;");
-        texto = texto.replaceAll("î", "&#148;");
+        //texto = texto.replaceAll("", "&#147;");
+        //texto = texto.replaceAll("¬î", "&#148;");
         
-        texto = texto.replaceAll("ñ", "&#8211;");
-        texto = texto.replaceAll("ó", "&#8212;"); 
+        texto = texto.replaceAll("‚Äì", "&#8211;");
+        texto = texto.replaceAll("‚Äî", "&#8212;");
         
-        //texto = texto.replaceAll("\"", "&#34;");
+		texto = texto.replaceAll("√ß", "&#231;");
+		texto = texto.replaceAll("√á", "&#199;");
 		return texto;
 	}
 	

@@ -6,6 +6,11 @@ import org.apache.log4j.Logger;
 
 public class ContentDTO implements Cloneable{
 	
+	
+	public static void main(String [] args){
+		System.out.println("Hola");
+	}
+	
 	private Logger logger=Logger.getLogger(ContentDTO.class);
 	
 	private String fcIdContenido;
@@ -633,7 +638,7 @@ public class ContentDTO implements Cloneable{
 	
 	/*@Override
 	protected Object clone() throws CloneNotSupportedException {
-		// TODO Apéndice de método generado automáticamente
+		// TODO Apï¿½ndice de mï¿½todo generado automï¿½ticamente
 		return super.clone();
 	}*/
 	@Override

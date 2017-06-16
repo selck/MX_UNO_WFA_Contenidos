@@ -1,15 +1,23 @@
 package mx.com.amx.unotv.workflow.bo;
 
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+
 import mx.com.amx.unotv.workflow.dto.ContentDTO;
 import mx.com.amx.unotv.workflow.dto.IdResponseFacebook;
+import mx.com.amx.unotv.workflow.dto.NoticiaDTO;
 import mx.com.amx.unotv.workflow.dto.ParametrosDTO;
 import mx.com.amx.unotv.workflow.dto.PushAMP;
 import mx.com.amx.unotv.workflow.dto.RespuestaWSAMP;
 import mx.com.amx.unotv.workflow.dto.VideoOoyalaDTO;
+import mx.com.amx.unotv.workflow.dto.WrapperJsonDetail;
 import mx.com.amx.unotv.workflow.util.ElementosContenido;
 import mx.com.amx.unotv.workflow.util.OperacionesPreRender;
 
 import org.apache.log4j.Logger;
+import org.codehaus.jettison.json.JSONObject;
 
 import com.google.gson.Gson;
 import com.ibm.workplace.wcm.api.Content;
@@ -20,7 +28,7 @@ import com.ibm.workplace.wcm.api.Workspace;
 public class GeneraContenido{
 	
 	private final Logger logger = Logger.getLogger(this.getClass().getName());
-
+	
 	public boolean validaInsertContenido(Content myContent) {
 		boolean success = true;
 		
@@ -66,23 +74,6 @@ public class GeneraContenido{
 							} catch (Exception e) {
 								logger.error("Error en delete FB: ",e);
 							}
-							/*try {
-								if(contentDTO.getFcTagsApp() != null && contentDTO.getFcTagsApp().length>0){
-									procesoBOColombia.deleteTagsApp(contentDTO);
-								}
-							} catch (Exception e) {
-								logger.error("Error deleteTagsApp[Colombia]: "+e.getLocalizedMessage());
-							}
-							try {
-								procesoBOColombia.deleteNotaBD(contentDTO);
-							} catch (Exception e) {
-								logger.error("Error deleteNotaBD[Colombia]: "+e.getLocalizedMessage());
-							}
-							try {
-								procesoBOColombia.deleteNotaHistoricoBD(contentDTO);
-							} catch (Exception e) {
-								logger.error("Error deleteNotaHistoricoBD[Colombia]: "+e.getLocalizedMessage());
-							}*/
 							
 							logger.info("Delete Nota " + myContent.getTitle() + ": " + success);
 						} catch(Exception e) {
@@ -119,7 +110,7 @@ public class GeneraContenido{
 							logger.info("carpetaContenido: "+carpetaContenido);
 							success = prerender.createFolders(carpetaContenido);
 							
-							//Se utilizará la base url absoluta para poder ver las imagenes y estilos productivos.
+							//Se utilizara la base url absoluta para poder ver las imagenes y estilos productivos.
 							
 							parametrosDTO.setBaseURL(parametrosDTO.getBaseURLTest());
 							
@@ -248,34 +239,60 @@ public class GeneraContenido{
 									logger.error("Error en FB: "+e.getMessage()+" -- "+e.getLocalizedMessage());
 								}
 								
-								//bo
+								try {
+									//Creando el json
+									
+									
+									NoticiaDTO noticia=con.getNoticiaJson(myContent, ws, parametrosDTO);
+									
+									JSONObject jsonDetalle = new JSONObject();
+									JSONObject jsonNota = new JSONObject();
+									
+									jsonNota.put("url_nota", noticia.getUrl_nota());
+									jsonNota.put("id_contenido", noticia.getId_contenido());
+									jsonNota.put("id_categoria", noticia.getId_categoria());
+									jsonNota.put("nombre", noticia.getNombre());
+									jsonNota.put("titulo", noticia.getTitulo());
+									jsonNota.put("descripcion", noticia.getDescripcion());
+									jsonNota.put("escribio", noticia.getEscribio());
+									jsonNota.put("lugar", noticia.getLugar());
+									jsonNota.put("fuente", noticia.getFuente());
+									jsonNota.put("id_tipo_nota", noticia.getId_tipo_nota());
+									jsonNota.put("imagen_principal", noticia.getImagen_principal());
+									jsonNota.put("pie_imagen", noticia.getPie_imagen());
+									jsonNota.put("video_youtube", noticia.getVideo_youtube());
+									jsonNota.put("id_video_content", noticia.getId_video_content());
+									jsonNota.put("id_video_player", noticia.getId_video_player());
+									jsonNota.put("id_video_pcode", noticia.getId_video_pcode());
+									jsonNota.put("galeria", noticia.getGaleria());
+									jsonNota.put("imagen_infografia", noticia.getImagen_infografia());
+									jsonNota.put("contenido_nota", noticia.getContenido_nota());
+									jsonNota.put("fecha_publicacion", noticia.getFecha_publicacion());
+									jsonNota.put("fecha_modificacion", noticia.getFecha_modificacion());
+									jsonNota.put("adSetCode", noticia.getAdSetCode());
+									jsonNota.put("ruta_dfp", noticia.getRuta_dfp());
+									jsonNota.put("desc_categoria", noticia.getDesc_categoria());
+									jsonNota.put("desc_seccion", noticia.getDesc_seccion());
+									jsonNota.put("posicion_galeria", noticia.getPosicion_galeria());
+									
+									jsonDetalle.put("noticia", jsonNota);
+									jsonDetalle.put("mensaje", "OK");
+									jsonDetalle.put("codigo", "0");
+									jsonDetalle.put("causa_error", "");	
+									
+									writeJson(carpetaContenido+"/detalle.json", jsonDetalle.toString());
+								    
+								} catch (Exception e) {
+									logger.error("Error convirtiendo el objeto NoticiaDTO: ",e);
+								}
+								
 							}
 								
 						} catch (Exception e) {
 							logger.error("Error al generar prerender : ", e);
 						}					
 					}			
-					/*logger.info("=========================Empezando con Colombia===================================================================");
-					try {
-						ProcesoBO procesoBOColombia = new ProcesoBO(parametrosDTO.getURL_WS());
-						try {
-							procesoBOColombia.setNotaBD(contentDTO);
-							logger.info("Termino setNota OK");
-						} catch (Exception e) {
-							logger.error("Error setNotaBD[Colombia]: "+e.getLocalizedMessage());
-						}
-												
-						try {
-								procesoBOColombia.insertTagsAppContent(contentDTO);
-						} catch (Exception e) {
-								logger.error("Error insertTagsAppContent[Colombia]: "+e.getLocalizedMessage());
-						}
-						logger.info("insertoTagsApp_colombia " + contentDTO.getFcNombre() + ": " + success);
-						
-						
-					} catch (Exception e) {
-						logger.error("Error con el proceso de Colombia ",e);
-					}*/
+				
 					ws.logout();												
 				}
 			  }
@@ -283,5 +300,21 @@ public class GeneraContenido{
 			logger.debug("Exception GeneraNoticia: ", e);
 		}
 		return success;		
+	}
+	
+	
+	private void writeJson(String parRuta, String json)
+	{		
+		
+		try {							
+			Writer wt = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(parRuta),"UTF-8"));
+			try {
+				wt.write(json);
+			} finally {
+				wt.close();
+			}						
+		} catch (Exception e) {
+			logger.error("Exception en writeJson: ",e);
+		}
 	}
 }

@@ -17,6 +17,7 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
+import mx.com.amx.unotv.workflow.dto.ExtraInfoContentDTO;
 import mx.com.amx.unotv.workflow.dto.ParametrosDTO;
 import mx.com.amx.unotv.workflow.dto.PushAMP;
 import mx.com.amx.unotv.workflow.dto.RespuestaWSAMP;
@@ -55,6 +56,19 @@ public class ProcesoBO{
 	        headers.setContentType(MediaType.APPLICATION_JSON);
 	        
 			URL_WS_BASE = urlWS;
+	}
+	
+	public ExtraInfoContentDTO getExtraInfoContent(String friendlyURL){
+		ExtraInfoContentDTO respuesta=new ExtraInfoContentDTO();
+		String metodo="getExtraInfoContent";
+		String URL_WS=URL_WS_BASE+metodo;
+		try {
+			HttpEntity<String> entity = new HttpEntity<String>( friendlyURL );
+			respuesta=restTemplate.postForObject(URL_WS, entity, ExtraInfoContentDTO.class);
+		} catch(Exception e) {
+			logger.error("Error getExtraInfoContent - FB [BO]: "+e.getLocalizedMessage());
+		}
+		return respuesta;
 	}
 	
 	public String insertUpdateArticleFB (ContentDTO contentDTO){
